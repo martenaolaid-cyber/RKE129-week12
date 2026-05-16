@@ -1,0 +1,188 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f1f1f;
+  font-family: "Times new roman", sans-serif;
+  color: #111;
+  padding: 20px;
+}
+
+.page {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1060px;
+  margin: 40px auto;
+  background: #d8d3d3;
+  padding: 22px;
+}
+
+.cv {
+  border: 3px solid #6c5c5c;
+  border-radius: 18px;
+  padding: 40px 58px;
+}
+
+.top{
+    display:flex;
+    align-items:flex-start;
+    gap:55px;
+}
+
+.photo {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 30px;
+  background: #111;
+  margin-top: 5px;
+  transition: 0.3s ease;
+}
+.photo:hover{
+    transform: scale(1.15);
+}
+h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+  margin-left: 40px
+}
+
+.contact {
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-left: 10px
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+
+}
+
+.section {
+  margin-top: 45px;
+}
+
+.section h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin-bottom: 28px;
+  margin-left: 40px
+}
+
+.row{
+    display:grid;
+    grid-template-columns: 263px 1fr;
+    gap:50px;
+    align-items:start;
+    margin-bottom:30px;
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Times new roman", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+  margin-top: -2px;
+  
+}
+
+.desc {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Times new roman", sans-serif;
+  
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.bottom p {
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+  font-family: "Times new roman", sans-serif;
+}
+
+.date {
+    font-size: 18px;
+  font-family: "Times new roman", sans-serif;
+  margin-left: 40px;
+
+}
+
+@media (max-width: 900px)
+   
+
+{
+
+    .page{
+        width:100%;
+        padding:10px;
+    }
+
+    .cv{
+        padding:25px;
+    }
+
+    .top{
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
+    }
+
+    .top-right{
+        margin-top:20px;
+    }
+
+    h1{
+        font-size:42px;
+    }
+
+    .contact{
+        font-size:13px;
+        line-height:1.5;
+    }
+
+    .description{
+        text-align:left;
+        font-size:14px;
+    }
+
+    .photo{
+        width:180px;
+        height:240px;
+    }
+
+    .row{
+        grid-template-columns:1fr;
+        gap:10px;
+    }
+
+    .date{
+        font-weight:bold;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+    .bottom{
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+    }
+}
